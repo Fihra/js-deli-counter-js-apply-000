@@ -19,8 +19,16 @@ function currentLine(katzDeliLine){
     return "The line is currently empty.";
   }
   else{
+    let currentPeople = '';
+    
     for(let i = 0; i < katzDeliLine.length; i++){
-
+      if(i === katzDeliLine.length)
+      {
+        currentPeople += `${i+1}. ${katzDeliLine[i]}`;
+        return currentPeople;
+      }
+      
+      currentPeople += `${i+1}. ${katzDeliLine[i]}, `;
     }
   }
 }
