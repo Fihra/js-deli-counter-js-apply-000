@@ -25,10 +25,10 @@ function currentLine(katzDeliLine){
       if(i === katzDeliLine.length)
       {
         currentPeople += `${i+1}. ${katzDeliLine[i]}`;
-        return currentPeople;
+        break;
       }
 
       currentPeople += `${i+1}. ${katzDeliLine[i]}, `;
-    }
+    }return currentPeople;
   }
 }
