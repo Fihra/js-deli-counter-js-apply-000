@@ -22,7 +22,7 @@ function currentLine(katzDeliLine){
     let currentPeople = 'The line is currently: ';
 
     for(let i = 0; i < katzDeliLine.length; i++){
-      if(i === katzDeliLine.length)
+      if(i === katzDeliLine.length - 1)
       {
         currentPeople += `${i+1}. ${katzDeliLine[i]}`;
         break;
